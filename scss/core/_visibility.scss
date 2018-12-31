@@ -1,0 +1,13 @@
+// Always hide an element with the `hidden` HTML attribute (from PureCSS).
+// Needed for proper display in IE 10-.
+[hidden] {
+  display: none !important;
+}
+
+.text-hide {
+  @include text-hide($ignore-warning: true);
+}
+
+template {
+  display: none; // Add the correct display in IE
+}
